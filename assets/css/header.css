@@ -1,0 +1,113 @@
+.header {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.7803921569);
+}
+
+.header .h-item-wrapper {
+  height: 71px;
+  display: flex;
+}
+
+.h-item-wrapper .h-item-content {
+  width: 100%;
+}
+
+.h-item-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-item-content .h-item-list {
+  display: flex;
+  margin-left: 40px;
+}
+
+.h-item-list .h-item {
+  display: block;
+  font-size: 15px;
+  color: aliceblue;
+  text-decoration: none;
+  line-height: 71px;
+  padding: 0px 18px;
+  font-family: "Signika Negative", sans-serif;
+  opacity: 0.8;
+}
+
+.h-item-list .active {
+  position: relative;
+  opacity: 1;
+  color: #ffffff;
+  text-shadow: 0px 0px 11px #0072ff;
+}
+
+.h-item-list .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #61e765;
+}
+
+.h-item-list .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to bottom, #ffffff00, #7fff9212);
+}
+
+.header .img-logo {
+  height: fit-content;
+  margin-top: 3px;
+  width: 150px;
+}
+
+.h-item-icon-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-item {
+  cursor: pointer;
+  color: rgb(226, 233, 240);
+  height: 38px;
+  width: 38px;
+  background-color: #191919;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 100%;
+  border: 0.14rem solid #61e77ee0;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.icon-item .musicoff {
+  display: none;
+}
+
+.icon-item:hover {
+  color: aliceblue;
+  box-shadow: 0px 0px 7px #61e77e;
+}
+
+.offmusic {
+  color: rgb(143, 143, 143) !important;
+}
+
+.offmusic .musicoff {
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  color: rgb(211 86 78);
+  font-size: 10px;
+  height: fit-content;
+}

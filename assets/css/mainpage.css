@@ -1,0 +1,103 @@
+.mainpage-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 71px;
+}
+
+.mainpage-wrapper > .title {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 80px;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+}
+
+.mainpage-wrapper > .play-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-video > .play-video-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  background-color: white;
+  border-radius: 50%;
+  color: #4b6572;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  text-align: center;
+  box-shadow: 0px 0px 4px 2px aliceblue;
+}
+
+.play-video > .play-video-btn:hover {
+  background-color: transparent;
+  color: white;
+  box-shadow: 0px 0px 0px aliceblue;
+}
+
+.play-video > .play-video-btn i {
+  margin-left: 5px;
+}
+
+@keyframes arrowdownanimation {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+.mainpage-wrapper .arrow-down {
+  cursor: pointer;
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 45px;
+  animation: arrowdownanimation 2s cubic-bezier(0.19, 0.57, 0.5, 1.09) infinite;
+}
+
+.arrow-down img {
+  width: 100%;
+}
+
+.mainpage-wrapper .download-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 40px;
+}
+
+.download-wrapper .text-release-official {
+  color: aliceblue;
+  font-size: 28px;
+  font-family: "Signika Negative", sans-serif;
+  text-shadow: 0 0 3px #0058ff;
+  text-align: center;
+}
+
+.download-wrapper .download-list {
+  gap: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.download-wrapper .download-list .download-item {
+  display: block;
+  opacity: 0.8;
+}
+
+.download-wrapper .download-list .download-item:hover {
+  opacity: 1;
+}

@@ -1,0 +1,19 @@
+.news-wrapper {
+  margin-top: 50px;
+  padding: 10px 150px;
+}
+
+.news-box-fisrt {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.news-box-fisrt .main-video {
+  width: calc(70% - 30px);
+}
+
+.news-box-fisrt .posts-b {
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 30%;
+}

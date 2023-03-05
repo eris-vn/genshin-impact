@@ -1,0 +1,133 @@
+.teyvat-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 71px;
+  background-color: #141f28;
+}
+
+.teyvat-wrapper > .title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+}
+
+.teyvat-wrapper > .title-line {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+}
+
+.teyvat-content {
+  margin-top: 140px;
+  display: none;
+  gap: 20px;
+}
+
+.teyvat-wrapper .active {
+  display: flex;
+}
+
+.teyvat-content > .image-thumbnails img {
+  width: 100%;
+}
+
+.teyvat-content > .content-wrapper {
+  position: relative;
+  width: calc(50% - 20px);
+}
+
+.teyvat-content > .content-wrapper .logo {
+  height: 62px;
+  width: 60px;
+  margin-top: -5px;
+}
+
+.teyvat-content > .content-wrapper > * > .title {
+  margin-left: 10px;
+  font-size: 50px;
+  color: white;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px black;
+}
+
+.teyvat-content > .content-wrapper .desc {
+  margin-top: 20px;
+  margin-right: 100px;
+  color: white;
+  font-family: "Signika", sans-serif;
+}
+
+.teyvat-content > .image-thumbnails {
+  width: 50%;
+}
+
+.mondstadt {
+  position: relative;
+}
+
+.mondstadt > .swiper-pagination-2 {
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+  margin-left: 10px;
+}
+
+.teyvat-content > .content-wrapper > .another-land {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.teyvat-content > .content-wrapper > .another-land img {
+  width: 100%;
+}
+
+.another-land > .land {
+  position: relative;
+  height: 123px;
+  width: 210px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.another-land > .land > .img-wrapper {
+  height: 100%;
+}
+
+.another-land > .land > .img-wrapper img {
+  height: 100%;
+  transition: 0.2s all ease-in;
+}
+
+.another-land > .land:hover > .img-wrapper img {
+  transform: scale(1.2);
+}
+
+.another-land > .land:hover > .title {
+  opacity: 1;
+  text-shadow: 0px 0px 11px #0072ff;
+}
+
+.another-land > .land > .title {
+  user-select: none;
+  opacity: 0.9;
+  font-size: 19px;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  line-height: 123px;
+  text-align: center;
+}

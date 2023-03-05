@@ -1,0 +1,70 @@
+@import url("/assets/css/header.css");
+@import url("/assets/css/mainpage.css");
+@import url("/assets/css/teyvat.css");
+@import url("/assets/css/news.css");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Signika+Negative:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&family=Tilt+Warp&display=swap");
+
+html,
+body {
+  margin: 0px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.footer {
+  height: 300px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

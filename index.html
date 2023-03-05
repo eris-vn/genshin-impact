@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <audio id="audio">
+        <source src="/assets/audio/ost-theme-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="header">
+        <div class="container">
+            <div class="h-item-wrapper">
+                <img class="img-logo" src="/assets/img/logo.png" alt="Logo">
+                <div class="h-item-content">
+                    <div class="h-item-list">
+                        <a class="h-item active" href="#">TRANG CHỦ</a>
+                        <a class="h-item" href="#">TEYVAT</a>
+                        <a class="h-item" href="#">NHÂN VẬT</a>
+                        <a class="h-item" href="#">TIN TỨC</a>
+                    </div>
+                    <div class="h-item-icon-list">
+                        <a href="#" class="icon-item">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="icon-item">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <div class="icon-item" id="music">
+                            <i class="fa-solid fa-music"></i>
+                            <i class="musicoff fa-solid fa-ban"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <!-- Trang Chủ -->
+            <div class="swiper-slide">
+                <video src="/assets/video/aether.mp4" muted="muted" loop="loop" autoplay="autoplay"
+                    poster="/assets/img/aether.jpg" class="bg-video"></video>
+                <div class="mainpage-wrapper">
+                    <div class="title">
+                        KHÁM PHÁ <br>
+                        THẾ GIỚI TEYVAT
+                    </div>
+                    <div class="play-video">
+                        <img src="/assets/img/video-poster.png" alt="Video">
+                        <div class="play-video-btn">
+                            <i class="mt-3 ml-1 fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="arrow-down">
+                        <img src="/assets/img/arrow.png" alt="arrow down">
+                    </div>
+                    <div class="download-wrapper">
+                        <div class="text-release-official"> Đã chính thức có mặt trên nhiều nền tảng </div>
+                        <div class="download-list">
+                            <a class="download-item" href="#">
+                                <img src="/assets/img/download-psn.png" alt="PSN" />
+                            </a>
+                            <a class="download-item" href="#">
+                                <img src="/assets/img/download-appstore.png" alt="AppStore" />
+                            </a>
+                            <a class="download-item" href="#">
+                                <img src="/assets/img/download-chplay.png" alt="ChPlay" />
+                            </a>
+                            <a class="download-item" href="#">
+                                <img src="/assets/img/download-window.png" alt="Window" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teyvat -->
+            <div class="swiper-slide">
+                <div class="teyvat-wrapper">
+                    <div class="title">Lục Địa Teyvat</div>
+                    <img class="title-line" src="/assets/img/line-1.png" alt="line">
+
+                    <div class="container">
+                        <div class="teyvat-content active" id="mondstadt">
+                            <div class="content-wrapper">
+                                <div class="d-flex">
+                                    <img class="logo" src="/assets/img/mondstadt-logo.png" alt="Logo">
+                                    <div class="title">Mondstadt</div>
+                                </div>
+                                <img src="/assets/img/line-2.png" alt="line 2">
+                                <div class="desc">Thành phố tự do nằm ở phía Đông Bắc đại lục Teyvat.
+                                    Giữa những dãy núi và đồng bằng rộng lớn, làn gió tự do cuốn theo hơi thở của ngọn
+                                    bồ công anh bay qua Hồ Rượu Trái Cây, đem theo lời chúc phúc và ân trạch từ Phong
+                                    Thần Barbatos đến Thành Mondstadt nằm trên đảo hồ trung tâm.</div>
+
+                                <div class="another-land">
+                                    <div class="land" onclick="change_land('liyue')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/liyue-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Liyue</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('inazuma')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/inazuma-1.jpg" alt="inazuma">
+                                        </div>
+                                        <div class="title">Inazuma</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('sumeru')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/sumeru-1.jpg" alt="sumeru">
+                                        </div>
+                                        <div class="title">Sumeru</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-thumbnails">
+                                <div class="swiper-container mondstadt">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/mondstadt-1.jpg" alt="Banner 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/mondstadt-2.webp" alt="Banner 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/mondstadt-3.webp" alt="Banner 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/mondstadt-4.jpg" alt="Banner 4">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teyvat-content" id="liyue">
+                            <div class="content-wrapper">
+                                <div class="d-flex">
+                                    <img class="logo" src="/assets/img/liyue-logo.png" alt="Logo">
+                                    <div class="title">Liyue</div>
+                                </div>
+                                <img src="/assets/img/line-2.png" alt="line 2">
+                                <div class="desc">Là bến cảng giàu có nằm phía đông đại lục Teyvat.
+                                    Vùng đất màu mỡ được tạo nên từ những dãy núi cao, rừng đá sừng sững, đồng bằng rộng
+                                    lớn và những bờ sông nhộn nhịp sức sống, nơi đây rực rỡ sắc màu trong bốn mùa. Có
+                                    bao nhiêu món quà cổ xưa của Nham Ma Thần được chôn vùi giữa núi non và những kỳ
+                                    tích đá đang chờ người ta khám phá đây?</div>
+
+                                <div class="another-land">
+                                    <div class="land" onclick="change_land('inazuma')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/inazuma-1.jpg" alt="inazuma">
+                                        </div>
+                                        <div class="title">Inazuma</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('sumeru')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/sumeru-1.jpg" alt="sumeru">
+                                        </div>
+                                        <div class="title">Sumeru</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('mondstadt')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/mondstadt-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Mondstadt</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-thumbnails">
+                                <div class="swiper-container mondstadt">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/liyue-1.jpg" alt="Banner 1">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/liyue-2.webp" alt="Banner 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/liyue-3.webp" alt="Banner 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/liyue-4.jpg" alt="Banner 4">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teyvat-content" id="inazuma">
+                            <div class="content-wrapper">
+                                <div class="d-flex">
+                                    <img class="logo" src="/assets/img/inazuma-logo.png" alt="Logo">
+                                    <div class="title">Inazuma</div>
+                                </div>
+                                <img src="/assets/img/line-2.png" alt="line 2">
+                                <div class="desc">Quần đảo biệt lập nằm ở phía đông đại lục Teyvat.
+                                    Vượt qua giông bão bất tận, đặt chân lên hòn đảo ngập tràn lá phong đỏ và hoa anh
+                                    đào, trên những bờ cát quanh co, những vách đá cao chót vót và cả trong những khu
+                                    rừng bí ẩn, chứng kiến sự vĩnh hằng được Tôn Chủ Narukami Ogosho theo đuổi.</div>
+
+                                <div class="another-land">
+                                    <div class="land" onclick="change_land('sumeru')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/sumeru-1.jpg" alt="sumeru">
+                                        </div>
+                                        <div class="title">Sumeru</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('mondstadt')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/mondstadt-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Mondstadt</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('liyue')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/liyue-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Liyue</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-thumbnails">
+                                <div class="swiper-container mondstadt">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-2.webp" alt="Banner 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-3.jpg" alt="Banner 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-4.jpg" alt="Banner 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-1.jpg" alt="Banner 1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teyvat-content" id="sumeru">
+                            <div class="content-wrapper">
+                                <div class="d-flex">
+                                    <img class="logo" src="/assets/img/sumeru-logo.png" alt="Logo">
+                                    <div class="title">Sumeru</div>
+                                </div>
+                                <img src="/assets/img/line-2.png" alt="line 2">
+                                <div class="desc">Thành phố học thức nằm ở phía tây Đại Lục Teyvat.
+                                    Vùng đất kỳ lạ với rừng mưa sum suê và sa mạc khô cằn. Nơi có vô số loại quả trí tuệ
+                                    sinh ra và chôn vùi tại đây. Cho dù là băng qua khu rừng rậm đến các bậc thang của
+                                    thành phố học thức, hay là tiến sâu vào sa mạc để khai quật di tích đất đỏ, du khách
+                                    đến từ phương xa đều có thể nhận được tri thức quý báu từ đây.</div>
+
+                                <div class="another-land">
+                                    <div class="land" onclick="change_land('mondstadt')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/mondstadt-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Mondstadt</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('liyue')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/liyue-1.jpg" alt="liyue">
+                                        </div>
+                                        <div class="title">Liyue</div>
+                                    </div>
+                                    <div class="land" onclick="change_land('inazuma')">
+                                        <div class="img-wrapper">
+                                            <img src="/assets/img/inazuma-1.jpg" alt="inazuma">
+                                        </div>
+                                        <div class="title">Inazuma</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-thumbnails">
+                                <div class="swiper-container mondstadt">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-2.webp" alt="Banner 2">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-3.jpg" alt="Banner 3">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-4.jpg" alt="Banner 4">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="/assets/img/inazuma-1.jpg" alt="Banner 1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nhân Vật -->
+            <!-- <div class="swiper-slide">
+                <div class="mainpage-wrapper teyvat-wrapper">
+                    Nhân vật
+                </div>
+            </div> -->
+
+            <!-- Tin Tức -->
+            <div class="swiper-slide">
+                <div class="mainpage-wrapper teyvat-wrapper teyvat-">
+                    <div class="container">
+                        <div class="news-wrapper">
+                            <div class="news-box-fisrt">
+                                <div class="main-video">
+                                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/AcTUi59vw_E"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="posts-b">
+                                    <div class="thumbnails">
+                                        <!-- <img width="100%" src="/assets/img/aether.jpg" alt="Thumbnails"> -->
+                                    </div>
+                                    <div class="title">Test</div>
+                                    <div class="desc">This is test posts</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="swiper-slide footer">
+                Footer
+            </div>
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script>
+        const menu = ["TRANG CHỦ", "TEYVAT", "NHÂN VẬT", "TIN TỨC"];
+        const swiper = new Swiper(".swiper", {
+            direction: "vertical",
+            allowTouchMove: false,
+            slidesPerView: 'auto',
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+            },
+        });
+        var slider3 = new Swiper('.mondstadt', {
+            effect: 'slide',
+
+            pagination: {
+                el: '.swiper-pagination-2',
+                clickable: true
+            },
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+        });
+
+        // bắt dữ kiện đổi slide và đổi navbar
+        swiper.on("slideChange", (index) => {
+            $(".h-item").each(function (itemIndex) {
+                if (index.activeIndex == itemIndex) {
+                    $(".h-item").removeClass("active");
+                    $(this).addClass("active");
+                }
+            });
+        });
+        $(document).ready(function () {
+            $(".h-item").click(function () {
+                let index = menu.indexOf($(this).text());
+                if (index != -1) {
+                    swiper.slideTo(index);
+                }
+            });
+        });
+
+        // xử lý nhạc nền
+        $(document).ready(function () {
+            // $('#audio')[0].play();
+        });
+        $("#music").click(function () {
+            if ($("#music").hasClass("offmusic")) {
+                $("#audio")[0].play();
+                $("#music").removeClass("offmusic");
+            } else {
+                $("#audio")[0].pause();
+                $("#music").addClass("offmusic");
+            }
+        });
+        $(".arrow-down").click(function () {
+            swiper.slideTo(1);
+        });
+
+        // xử lý đổi vùng đất
+        function change_land(land) {
+            $('.teyvat-content').removeClass("active");
+            $(`#${land}`).addClass('active');
+        }
+    </script>
+</body>
+
+</html>
