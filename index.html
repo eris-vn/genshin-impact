@@ -95,7 +95,7 @@
 
             <!-- Teyvat -->
             <div class="swiper-slide">
-                <div class="teyvat-wrapper">
+                <div class="teyvat-wrapper teyvat-background">
                     <div class="title">Lục Địa Teyvat</div>
                     <img class="title-line" src="/assets/img/line-1.png" alt="line">
 
@@ -319,30 +319,368 @@
             </div>
 
             <!-- Nhân Vật -->
-            <!-- <div class="swiper-slide">
-                <div class="mainpage-wrapper teyvat-wrapper">
-                    Nhân vật
+            <div class="swiper-slide ">
+                <div class="mainpage-wrapper teyvat-wrapper character-background-mondstadt" id="character-bg">
+                    <div class="container character-controller">
+                        <div class="info-wrapper active" id="jean">
+                            <img class="thumbnails" src="/assets/img/characters/jean.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Jean</div>
+                                    <img class="vision" src="/assets/img/Vision_Mondstadt_Anemo.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Là quyền đội trưởng của Đội Kỵ Sĩ Tây Phong, Jean luôn cần mẫn làm việc, đem lại sự
+                                    yên
+                                    bình cho người dân. Tuy rằng không có tài năng thiên phú vượt bậc, nhưng nhờ chăm
+                                    chỉ luyện tập, hiện nay cô ấy không thua kém ai. Khi sự uy hiếp của Phong Ma Long
+                                    ngày
+                                    càng đến gần, vị quyền đội trưởng đáng tin tưởng này đã có sự chuẩn bị, thề phải bảo
+                                    vệ
+                                    Mondstadt.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="amber">
+                            <img class="thumbnails" src="/assets/img/characters/amber.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Amber</div>
+                                    <img class="vision" src="/assets/img/Vision_Mondstadt_Pyro.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Thiếu nữ hoạt bát thẳng thắn, là kỵ sĩ trinh thám duy nhất trong thành Mondstadt.
+                                    Amber yêu thích dùng cánh bay, liên tiếp ba năm dành được giải "Quán Quân Bay Lượn"
+                                    của thành Mondstadt. Là một ngôi sao mới của Đội Kỵ Sĩ Tây Phong, ngày hôm nay Amber
+                                    vẫn là người sôi nổi nhất.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="lisa">
+                            <img class="thumbnails" src="/assets/img/characters/lisa.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Lisa</div>
+                                    <img class="vision" src="/assets/img/Vision_Mondstadt_Electro.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Là một ma nữ thông minh thích ngủ.
+                                    Đảm nhiệm công việc quản lý thư viện của Đội Kỵ Sĩ Tây Phong, Lisa thường dùng cách
+                                    hiệu quả nhất để giải quyết vấn đề gặp phải.
+                                    Tuy rằng trông có vẻ lười biếng, nhưng cô gái trầm ổn ấy dường như đã nắm vững mọi
+                                    thứ.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="kaeya">
+                            <img class="thumbnails" src="/assets/img/characters/kaeya.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Kaeya</div>
+                                    <img class="vision" src="/assets/img/Vision_Mondstadt_Cryo.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Trong Đội Kỵ Sĩ Tây Phong, Kaeya là đội phó được tin tưởng nhất. Chỉ cần giao
+                                    nhiệm vụ cho hắn thì chắc chắn sẽ được giải quyết.
+                                    Trong thành Mondstadt, con người hài hước thú vị như hắn cũng rất được yêu
+                                    thích, nhưng gã Kỵ Sĩ này dường như có một bí mật không để người khác biết.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="barbara">
+                            <img class="thumbnails" src="/assets/img/characters/barbara.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Barbara</div>
+                                    <img class="vision" src="/assets/img/Vision_Mondstadt_Hydro.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Là mục sư tế lễ của Giáo Hội Tây Phong, cũng là thần tượng tỏa sáng của Mondstadt.
+                                    Đối với thành phố Mondstadt nơi đã quen với truyền thống nhà thơ lang thang. "Thần
+                                    Tượng" vẫn là một thứ khá mới mẻ. Nhưng ở Mondstadt, mọi người đều yêu Barbara.
+                                    Đây chính là tinh thần tự do của thành phố tự do - Tình yêu mà mọi người dành cho
+                                    Barbara khiến cô ấy rất cảm động.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="xiao">
+                            <img class="thumbnails" src="/assets/img/characters/xiao.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Xiao</div>
+                                    <img class="vision" src="/assets/img/Vision_Liyue_Anemo.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Một trong "Tam Nhãn Ngũ Hiển Tiên Nhân" bảo vệ cảng Liyue, còn được gọi là "Hộ Pháp
+                                    Dạ Xoa Đại Tướng".
+                                    Tuy có vẻ bề ngoài là một thiếu niên trẻ tuổi, thế nhưng những truyền thuyết về anh
+                                    sớm đã được ghi chép trong các cổ tịch ngàn năm.
+                                    Vô cùng yêu thích "Đậu Hũ Hạnh Nhân" của nhà trọ Vọng Thư.
+                                    Cũng là do mùi vị của "Đậu Hũ Hạnh Nhân" rất giống với giấc mộng đẹp.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="beidou">
+                            <img class="thumbnails" src="/assets/img/characters/beidou.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Beidou</div>
+                                    <img class="vision" src="/assets/img/Vision_Liyue_Electro.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Thuyền trưởng "Nam Thập Tự", người có danh vọng khá cao ở Liyue
+                                    Có người nói rằng cô có thể lấp núi dời sông, một vài người khác lại nói cô có thể
+                                    dương kiếm dẫn sét, lại có người tin rằng quái vật đáng sợ nơi biển sâu cũng chẳng
+                                    phải là kẻ địch của cô. Đối với người ngoài, họ sẽ cho đây là những lời nói nhảm,
+                                    thế nhưng những ai đã từng
+                                    sát cánh cùng Beidou đều tin như vậy-- "Nếu thật sự có quái vật biển sâu, Beidou có
+                                    thể chẻ nó ra làm hai mảnh."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="ningguang">
+                            <img class="thumbnails" src="/assets/img/characters/ningguang.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Ningguang</div>
+                                    <img class="vision" src="/assets/img/Vision_Liyue_Geo.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Thuyền trưởng "Nam Thập Tự", người có danh vọng khá cao ở Liyue
+                                    Có người nói rằng cô có thể lấp núi dời sông, một vài người khác lại nói cô có thể
+                                    dương kiếm dẫn sét, lại có người tin rằng quái vật đáng sợ nơi biển sâu cũng chẳng
+                                    phải là kẻ địch của cô. Đối với người ngoài, họ sẽ cho đây là những lời nói nhảm,
+                                    thế nhưng những ai đã từng
+                                    sát cánh cùng Beidou đều tin như vậy-- "Nếu thật sự có quái vật biển sâu, Beidou có
+                                    thể chẻ nó ra làm hai mảnh."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-wrapper">
+                            <div class="change-land">
+                                <div class="swiper-container character-change-land">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="title">Mondstadt</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="title">Liyue</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="title">Inazuma </div>
+                                        </div>
+                                    </div>
+                                    <div class="land-btn-next"></div>
+                                    <div class="land-btn-prev"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-container character-mondstadt active" id="character-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="avatar active" id="jean">
+                                            <img src="/assets/img/characters/avt_jean.png" alt="Avatar">
+                                            <div class="name">Jean</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar " id="amber">
+                                            <img src="/assets/img/characters/avt_amber.png" alt="Avatar">
+                                            <div class="name">Amber</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="lisa">
+                                            <img src="/assets/img/characters/avt_lisa.png" alt="Avatar">
+                                            <div class="name">Lisa</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="kaeya">
+                                            <img src="/assets/img/characters/avt_kaeya.png" alt="Avatar">
+                                            <div class="name">Kaeya</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="barbara">
+                                            <img src="/assets/img/characters/avt_barbara.png" alt="Avatar">
+                                            <div class="name">Barbara</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-container character-liyue" id="character-list">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="xiao">
+                                            <img src="/assets/img/characters/avt_xiao.png" alt="Avatar">
+                                            <div class="name">Xiao</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar " id="beidou">
+                                            <img src="/assets/img/characters/avt_beidou.png" alt="Avatar">
+                                            <div class="name">Beidou</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="ningguang">
+                                            <img src="/assets/img/characters/avt_ningguang.png" alt="Avatar">
+                                            <div class="name">Ningguang</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="avatar" id="xiangling">
+                                            <img src="/assets/img/characters/avt_xiangling.png" alt="Avatar">
+                                            <div class="name">Xiangling</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Tin Tức -->
             <div class="swiper-slide">
-                <div class="mainpage-wrapper teyvat-wrapper teyvat-">
+                <div class="mainpage-wrapper teyvat-wrapper news-backgroud">
                     <div class="container">
                         <div class="news-wrapper">
                             <div class="news-box-fisrt">
                                 <div class="main-video">
-                                    <iframe width="100%" height="440" src="https://www.youtube.com/embed/AcTUi59vw_E"
+                                    <!-- <iframe width="100%" height="466" src="https://www.youtube.com/embed/AcTUi59vw_E"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
+                                        allowfullscreen></iframe> -->
                                 </div>
                                 <div class="posts-b">
-                                    <div class="thumbnails">
-                                        <!-- <img width="100%" src="/assets/img/aether.jpg" alt="Thumbnails"> -->
+                                    <div class="title">TIN NỔI BẬT</div>
+                                    <div class="posts-b-list">
+                                        <div class="post-item">
+                                            <div class="thumbs">
+                                                <img src="/assets/img/bai-ca-cua-gio.png" alt="Thumbs">
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="title">Nền Tảng Giao Lưu "Bài Ca Của Gió" mở hạn giờ, hãy
+                                                    cùng những Nhà Lữ Hành khác giao lưu và chia sẻ về âm nhạc tuyệt vời
+                                                    nhé!</div>
+                                                <div class="date">03/03/2023</div>
+                                                <div class="category">Sự Kiện</div>
+                                            </div>
+                                        </div>
+                                        <div class="post-item">
+                                            <div class="thumbs">
+                                                <img src="/assets/img/goi-y-cach-choi-bai-ca-cua-gio.jpg" alt="Thumbs">
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="title">Gợi Ý Cách Chơi "Bài Ca Của Gió"</div>
+                                                <div class="date">03/03/2023</div>
+                                                <div class="category">Thông Tin</div>
+                                            </div>
+                                        </div>
+                                        <div class="post-item">
+                                            <div class="thumbs">
+                                                <img src="/assets/img/dehya-trailer.jpg " alt="Thumbs">
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="title">[Genshin Impact] - Dehya: Tấm Lòng Cát Nóng</div>
+                                                <div class="date">01/03/2023</div>
+                                                <div class="category">Thông Tin</div>
+                                            </div>
+                                        </div>
+                                        <div class="post-item">
+                                            <div class="thumbs">
+                                                <img src="/assets/img/update-3.5.png" alt="Thumbs">
+                                            </div>
+                                            <div class="post-info">
+                                                <div class="title">Giới Thiệu Cập Nhật Phiên Bản 3.5 "Hơi Thở Hoa Gió"
+                                                </div>
+                                                <div class="date">01/03/2023</div>
+                                                <div class="category">Bản Tin</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="title">Test</div>
-                                    <div class="desc">This is test posts</div>
+                                </div>
+                            </div>
+                            <div class="news-box-second">
+                                <div class="title">TIN GẦN ĐÂY</div>
+                                <div class="swiper-container swiper-news">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="posts">
+                                                <div class="thumbs">
+                                                    <img src="/assets/img/bai-ca-cua-gio.png" alt="Banner 2">
+                                                    <div class="category">Sự Kiện</div>
+                                                </div>
+                                                <div class="date">03/03/2023</div>
+                                                <div class="title">Nền Tảng Giao Lưu "Bài Ca Của Gió" mở hạn giờ, hãy
+                                                    cùng những Nhà Lữ Hành khác giao lưu và chia sẻ về âm nhạc tuyệt vời
+                                                    nhé!</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="posts">
+                                                <div class="thumbs">
+                                                    <img src="/assets/img/goi-y-cach-choi-bai-ca-cua-gio.jpg"
+                                                        alt="Banner 3">
+                                                    <div class="category">Thông Tin</div>
+                                                </div>
+                                                <div class="date">03/03/2023</div>
+                                                <div class="title">Gợi Ý Cách Chơi "Bài Ca Của Gió"</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="posts">
+                                                <div class="thumbs">
+                                                    <img src="/assets/img/dehya-trailer.jpg" alt="Banner 4">
+                                                    <div class="category">Thông Tin</div>
+                                                </div>
+                                                <div class="date">01/03/2023</div>
+                                                <div class="title">[Genshin Impact] - Dehya: Tấm Lòng Cát Nóng</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="posts">
+                                                <div class="thumbs">
+                                                    <img src="/assets/img/update-3.5.png" alt="Banner 1">
+                                                    <div class="category">Bản Tin</div>
+                                                </div>
+
+                                                <div class="date">01/03/2023</div>
+                                                <div class="title">Giới Thiệu Cập Nhật Phiên Bản 3.5 "Hơi Thở Hoa Gió"
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="posts">
+                                                <div class="thumbs">
+                                                    <img src="/assets/img/dehya-trailer-2.jpg" alt="Banner 1">
+                                                    <div class="category">Thông Tin</div>
+                                                </div>
+
+                                                <div class="date">28/02/2023</div>
+                                                <div class="title">Giới thiệu nhân vật trong Genshin Impact - [Dehya: Sư
+                                                    Tử Lửa Lấp Lánh]</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination-2"></div>
                                 </div>
                             </div>
                         </div>
@@ -373,7 +711,7 @@
                 el: ".swiper-scrollbar",
             },
         });
-        var slider3 = new Swiper('.mondstadt', {
+        var slider1 = new Swiper('.mondstadt', {
             effect: 'slide',
 
             pagination: {
@@ -386,6 +724,58 @@
                 disableOnInteraction: false,
             },
 
+        });
+
+        var slider2 = new Swiper('.swiper-news', {
+            effect: 'slide',
+            slidesPerView: 4,
+            spaceBetween: 20
+        });
+
+        var slider3 = new Swiper('.character-mondstadt', {
+            effect: 'slide',
+            slidesPerView: 4,
+            spaceBetween: 15,
+        });
+
+        var slider4 = new Swiper('.character-change-land', {
+            allowTouchMove: false,
+            slidesPerView: 1,
+            effect: 'slide',
+            navigation: {
+                nextEl: ".land-btn-next",
+                prevEl: ".land-btn-prev",
+            },
+        });
+
+        var slider5 = new Swiper('.character-liyue', {
+            effect: 'slide',
+            slidesPerView: 4,
+            spaceBetween: 15,
+        });
+
+
+
+        slider4.on("slideChange", (index) => {
+            $('#character-bg').removeClass('character-background-mondstadt');
+            $('#character-bg').removeClass('character-background-liyue');
+            $('.character-liyue').removeClass('active');
+            $('.character-mondstadt').removeClass('active');
+            $('.character-background-inazuma').removeClass('active');
+
+            if (index.activeIndex == 0) {
+                slider3.slideTo(0)
+                $('#jean.avatar').click();
+                $('.character-mondstadt').addClass('active');
+                $('#character-bg').addClass('character-background-mondstadt');
+            } else if (index.activeIndex == 1) {
+                slider5.slideTo(0)
+                $('#xiao.avatar').click();
+                $('.character-liyue').addClass('active');
+                $('#character-bg').addClass('character-background-liyue');
+            } else if (index.activeIndex == 2) {
+                $('#character-bg').addClass('character-background-inazuma');
+            }
         });
 
         // bắt dữ kiện đổi slide và đổi navbar
@@ -428,6 +818,14 @@
             $('.teyvat-content').removeClass("active");
             $(`#${land}`).addClass('active');
         }
+
+        // xử lý avatar
+        $('.avatar').click(function () {
+            $('.avatar').removeClass('active');
+            $(this).addClass('active');
+            $('.info-wrapper').removeClass('active');
+            $(`#${$(this).attr('id')}`).addClass('active');
+        });
     </script>
 </body>
 

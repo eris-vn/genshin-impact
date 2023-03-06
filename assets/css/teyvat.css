@@ -7,6 +7,10 @@
   background-color: #141f28;
 }
 
+.teyvat-background {
+  background: url("/assets/img/mondstadt-1.jpg");
+}
+
 .teyvat-wrapper > .title {
   text-align: center;
   margin-top: 40px;

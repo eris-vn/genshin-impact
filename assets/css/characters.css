@@ -1,0 +1,161 @@
+.character-background {
+    background: url("/assets/img/mondstadt-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.character-background-mondstadt {
+    background: url("/assets/img/mondstadt-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.character-background-liyue {
+    background: url("/assets/img/liyue-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.character-background-inazuma {
+    background: url("/assets/img/inazuma-1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.character-controller {
+    height: 100%;
+    position: relative;
+}
+
+.character-controller .thumbnails {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.character-controller > div > .info {
+    display: flex;
+    position: absolute;
+    top: 130px;
+    right: 150px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.character-controller > .info-wrapper {
+    display: none;
+}
+
+.character-controller > .active {
+    display: block;
+}
+
+
+.info > .name {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 80px;
+    font-family: "Signika Negative", sans-serif;
+    position: relative;
+}
+
+.info > .name > .vision {
+    margin-left: 8px;
+}
+
+.info > .name > .line {
+    position: absolute;
+    bottom: -8px;
+    transform: scaleX(-1);
+    width: 260px;
+    right: 0;
+}
+
+
+.info > .desc {
+    margin-top: 20px;
+    width: 490px;
+    text-align: justify;
+    color: aliceblue;
+    font-family: "Signika", sans-serif;
+    background-color: #191919b2;
+    padding: 15px;
+    text-indent: 20px;
+}
+
+.character-controller .list-wrapper {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    width: 530px;
+    padding: 20px;
+    background-color: #191919b2;
+}
+
+.list-wrapper > .swiper-container {
+    display: none;
+}
+
+.list-wrapper > .active {
+    display: block  ;
+}
+
+.list-wrapper .avatar {
+    background-color: #191919b2;
+    border: 0.14rem solid #353535;
+}
+
+.list-wrapper .swiper-slide > .active {
+    display: block;
+    border: 0.14rem solid #61e77ee0;
+}
+
+.list-wrapper .avatar > .name {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Signika", sans-serif;
+    padding: 5px 0px;
+    padding-bottom: 7px;
+    margin-top: -3px;
+    background-color: #1a1a1a;
+}
+
+.list-wrapper .change-land {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    width: 180px;
+    padding: 0px 23px;
+}
+
+.change-land .title {
+    color: aliceblue;
+    font-size: 23px;
+    text-align: center;
+    font-family: "Signika", sans-serif;
+}
+
+.change-land .land-btn-next {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    background: url("/assets/img/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.change-land .land-btn-prev {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    transform: scaleX(-1);
+    background: url("/assets/img/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.change-land .swiper-button-disabled {
+    opacity: 0.5;
+}
