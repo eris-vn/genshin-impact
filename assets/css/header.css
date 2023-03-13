@@ -75,6 +75,10 @@
   gap: 1rem;
 }
 
+.h-item-icon-list > .icon-bars {
+  display: none;
+}
+
 .icon-item {
   cursor: pointer;
   color: rgb(226, 233, 240);

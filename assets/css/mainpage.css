@@ -91,6 +91,7 @@
   margin-top: 15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .download-wrapper .download-list .download-item {

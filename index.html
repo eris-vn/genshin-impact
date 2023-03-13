@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genshin Impact</title>
 
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -30,7 +31,8 @@
                         <a class="h-item active" href="#">TRANG CHỦ</a>
                         <a class="h-item" href="#">TEYVAT</a>
                         <a class="h-item" href="#">NHÂN VẬT</a>
-                        <a class="h-item" href="#">TIN TỨC</a>
+                        <!-- <a class="h-item" href="#">TIN TỨC</a> -->
+                        <a class="h-item" href="#">THAM GIA</a>
                     </div>
                     <div class="h-item-icon-list">
                         <a href="#" class="icon-item">
@@ -46,6 +48,9 @@
                             <i class="fa-solid fa-music"></i>
                             <i class="musicoff fa-solid fa-ban"></i>
                         </div>
+                        <a href="#" class="icon-item icon-bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -79,10 +84,10 @@
                             <a class="download-item" href="#">
                                 <img src="/assets/img/download-psn.png" alt="PSN" />
                             </a>
-                            <a class="download-item" href="#">
+                            <a class="download-item download-mobile" href="#">
                                 <img src="/assets/img/download-appstore.png" alt="AppStore" />
                             </a>
-                            <a class="download-item" href="#">
+                            <a class="download-item download-mobile" href="#">
                                 <img src="/assets/img/download-chplay.png" alt="ChPlay" />
                             </a>
                             <a class="download-item" href="#">
@@ -461,13 +466,25 @@
                                     <img class="line" src="/assets/img/line-2.png" alt="line">
                                 </div>
                                 <div class="desc">
-                                    Thuyền trưởng "Nam Thập Tự", người có danh vọng khá cao ở Liyue
-                                    Có người nói rằng cô có thể lấp núi dời sông, một vài người khác lại nói cô có thể
-                                    dương kiếm dẫn sét, lại có người tin rằng quái vật đáng sợ nơi biển sâu cũng chẳng
-                                    phải là kẻ địch của cô. Đối với người ngoài, họ sẽ cho đây là những lời nói nhảm,
-                                    thế nhưng những ai đã từng
-                                    sát cánh cùng Beidou đều tin như vậy-- "Nếu thật sự có quái vật biển sâu, Beidou có
-                                    thể chẻ nó ra làm hai mảnh."
+                                    Ngồi ở cung điện trên không, có nhiều tin đồn vây quanh, trên khuôn mặt luôn giữ một
+                                    nụ cười nho nhã thần bí. Là Thiên Quyền Tinh trong "Thất Tinh Liyue", cô không chỉ
+                                    tượng trưng cho quyền lực và pháp luật, còn là đại diện của tài phú và trí tuệ.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-wrapper" id="xiangling">
+                            <img class="thumbnails" src="/assets/img/characters/ningguang.png" alt="Character">
+                            <div class="info">
+                                <div class="name">
+                                    <div>Xiangling</div>
+                                    <img class="vision" src="/assets/img/Vision_Liyue_Pyro.png" alt="vision">
+                                    <img class="line" src="/assets/img/line-2.png" alt="line">
+                                </div>
+                                <div class="desc">
+                                    Ngồi ở cung điện trên không, có nhiều tin đồn vây quanh, trên khuôn mặt luôn giữ một
+                                    nụ cười nho nhã thần bí. Là Thiên Quyền Tinh trong "Thất Tinh Liyue", cô không chỉ
+                                    tượng trưng cho quyền lực và pháp luật, còn là đại diện của tài phú và trí tuệ.
                                 </div>
                             </div>
                         </div>
@@ -558,16 +575,16 @@
             </div>
 
             <!-- Tin Tức -->
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
                 <div class="mainpage-wrapper teyvat-wrapper news-backgroud">
                     <div class="container">
                         <div class="news-wrapper">
                             <div class="news-box-fisrt">
                                 <div class="main-video">
-                                    <!-- <iframe width="100%" height="466" src="https://www.youtube.com/embed/AcTUi59vw_E"
+                                    <iframe width="100%" height="466" src="https://www.youtube.com/embed/AcTUi59vw_E"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe> -->
+                                        allowfullscreen></iframe>
                                 </div>
                                 <div class="posts-b">
                                     <div class="title">TIN NỔI BẬT</div>
@@ -686,6 +703,11 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <!-- Đăng Ký -->
+            <div class="swiper-slide">
+
             </div>
 
             <!-- Footer -->
@@ -698,11 +720,21 @@
     </div>
 
     <script>
-        const menu = ["TRANG CHỦ", "TEYVAT", "NHÂN VẬT", "TIN TỨC"];
+        const menu = ["TRANG CHỦ", "TEYVAT", "NHÂN VẬT", "TIN TỨC", "THAM GIA"];
         const swiper = new Swiper(".swiper", {
             direction: "vertical",
-            allowTouchMove: false,
             slidesPerView: 'auto',
+            breakpoints: {
+                768: {
+                    allowTouchMove: true,
+                },
+                480: {
+                    allowTouchMove: true,
+                },
+                1200: {
+                    allowTouchMove: false,
+                }
+            },
             mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
@@ -755,13 +787,14 @@
         });
 
 
-
+        // xử lý đổi vùng đất nhân vật
         slider4.on("slideChange", (index) => {
             $('#character-bg').removeClass('character-background-mondstadt');
             $('#character-bg').removeClass('character-background-liyue');
+            $('#character-bg').removeClass('character-background-inazuma');
             $('.character-liyue').removeClass('active');
             $('.character-mondstadt').removeClass('active');
-            $('.character-background-inazuma').removeClass('active');
+            $('.character-inazuma').removeClass('active');
 
             if (index.activeIndex == 0) {
                 slider3.slideTo(0)
@@ -779,9 +812,9 @@
         });
 
         // bắt dữ kiện đổi slide và đổi navbar
-        swiper.on("slideChange", (index) => {
+        swiper.on("slideChange", (slide) => {
             $(".h-item").each(function (itemIndex) {
-                if (index.activeIndex == itemIndex) {
+                if (slide.activeIndex == itemIndex) {
                     $(".h-item").removeClass("active");
                     $(this).addClass("active");
                 }
@@ -809,6 +842,8 @@
                 $("#music").addClass("offmusic");
             }
         });
+
+        // chuyển đến slide teyvat
         $(".arrow-down").click(function () {
             swiper.slideTo(1);
         });
