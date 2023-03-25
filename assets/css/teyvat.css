@@ -9,6 +9,7 @@
 
 .teyvat-background {
   background: url("/assets/img/mondstadt-1.jpg");
+  background-size: cover;
 }
 
 .teyvat-wrapper > .title {
@@ -39,6 +40,7 @@
 
 .teyvat-content > .image-thumbnails img {
   width: 100%;
+  
 }
 
 .teyvat-content > .content-wrapper {
@@ -65,11 +67,15 @@
   margin-top: 20px;
   margin-right: 100px;
   color: white;
+  font-size: 18px;
   font-family: "Signika", sans-serif;
 }
 
 .teyvat-content > .image-thumbnails {
   width: 50%;
+  background-image: url("/assets/img/khung-1.png");
+  padding: 12px;
+  background-size: 100% 100%;
 }
 
 .mondstadt {
@@ -97,6 +103,7 @@
 }
 
 .another-land > .land {
+  border: 2px solid #7ed4c9db;
   position: relative;
   height: 123px;
   width: 210px;

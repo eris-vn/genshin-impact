@@ -8,12 +8,16 @@
 
 .mainpage-wrapper > .title {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 80px;
   color: white;
   font-family: "Signika Negative", sans-serif;
   font-weight: bold;
   text-shadow: 1px 1px 4px black;
+}
+
+.mainpage-wrapper > .title > img {
+  width: 700px;
 }
 
 .mainpage-wrapper > .play-video {

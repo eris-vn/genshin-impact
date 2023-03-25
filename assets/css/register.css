@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.dl-wrapper {
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/register-background.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.dl-wrapper .form-dl-wrapper {
+    margin-top: 100px;
+}
+
+.form-dl-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.form-dl-wrapper > .contents {
+    width: calc(62% - 20px);
+}
+
+.form-dl-wrapper > .regist-form {
+    width: 38%;
+}
+
+.form-dl-wrapper > .contents > .title {
+    font-size: 80px;
+    color: white;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px black;
+}
+
+.form-dl-wrapper > .contents > .title > div {
+    font-size: 90px;
+}
+
+.form-dl-wrapper > .contents > .desc {
+    color: aliceblue;
+    font-size: 26px;
+    font-family: "Signika", sans-serif;
+    text-shadow: 1px 1px 4px black;
+    margin-right: 100px;
+}
+
+.form-dl-wrapper > .contents .download-btn {
+    cursor: pointer;
+    color: #464646;
+    width: fit-content;
+    background-color: #fff31b;
+    padding: 18px 40px;
+    font-size: 25px;
+    font-family: 'Signika Negative';
+    font-weight: 600;
+    margin-top: 20px;
+    border: 2px solid #c4c400;
+    border-radius: 3px;
+}
+
+.form-dl-wrapper > .regist-form {
+    /* background-color: aliceblue; */
+}
+
+.form-dl-wrapper > .regist-form > img {
+    width: 100%;
+}

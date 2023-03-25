@@ -4,11 +4,18 @@
 @import url("/assets/css/news.css");
 @import url("/assets/css/characters.css");
 @import url("/assets/css/footer.css");
+@import url("/assets/css/register.css");
+@import url("/assets/css/paimon-download.css");
+@import url("/assets/css/modal.css");
 @import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Signika+Negative:wght@300;400;500;600;700&family=Signika:wght@300;400;500;600;700&family=Tilt+Warp&display=swap");
 
 html,
 body {
   margin: 0px;
+}
+
+img {
+  vertical-align: middle;
 }
 
 *,
@@ -35,9 +42,21 @@ body {
   object-fit: cover;
 }
 
+.image-thumbnails .swiper-horizontal {
+  background-color: #000000a3;
+}
+
 .container {
   width: 100%;
   max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -56,6 +75,27 @@ body > .swiper > .swiper-scrollbar {
 }
 
 @media screen and (max-width: 1200px) {
+  .character-controller > div > .info {
+    right: 20px;
+  }
+  .character-controller .list-wrapper {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: #191919b2;
+  }
+  .character-controller > div > .video {
+    display: none;
+  }
+  .teyvat-content > .content-wrapper > .another-land {
+    margin-top: 30px;
+    position: relative;
+  }
+  .teyvat-content > .image-thumbnails {
+    height: fit-content;
+  }
   .h-item-icon-list > .icon-item {
     display: block;
     user-select: none;
@@ -69,9 +109,42 @@ body > .swiper > .swiper-scrollbar {
   .h-item-icon-list > .icon-bars {
     display: none;
   }
+  .form-dl-wrapper > .contents > .title {
+    font-size: 70px;
+  }
+  .form-dl-wrapper > .contents > .title > div {
+    font-size: 80px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .form-dl-wrapper > .regist-form {
+    display: none;
+  }
+  .form-dl-wrapper > .contents {
+    width: 100%;
+  }
+  .character-controller .info-wrapper > .thumbnails {
+    left: -200px;
+  }
+  .teyvat-wrapper .active {
+    margin-top: 50px;
+    display: block;
+  }
+  .teyvat-content > .content-wrapper {
+    width: 100%;
+  }
+  .teyvat-content > .image-thumbnails {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .another-land > .land {
+    height: 135px;
+    width: 33.3333333%;
+  }
+  .another-land > .land > .title {
+    line-height: 135px;
+  }
   .mainpage-wrapper > .title {
     font-size: 70px;
   }
@@ -88,25 +161,86 @@ body > .swiper > .swiper-scrollbar {
   .h-item-icon-list > .icon-bars {
     display: block;
   }
+  .mainpage-wrapper > .title > img {
+    width: 580px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
-  .mainpage-wrapper > .title {
-    font-size: 60px;
+  .form-dl-wrapper > .contents > .title {
+    font-size: 3.8rem;
+  }
+  .form-dl-wrapper > .contents > .title > div {
+    font-size: 4rem;
   }
   .container {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
   }
+  .teyvat-content > .image-thumbnails {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .download-wrapper .download-list .download-window {
+    display: none;
+  }
+  .mainpage-wrapper > .title {
+    font-size: 60px;
+  }
+
   .h-item-icon-list > .icon-bars {
     display: block;
+  }
+  .mainpage-wrapper > .title > img {
+    width: 100%;
+    padding: 0px 90px;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .teyvat-content > .image-thumbnails {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .character-controller > div > .info {
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .character-controller > div > .info > .desc {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  
-
+  .form-dl-wrapper > .contents > .title {
+    font-size: 3.8rem;
+  }
+  .form-dl-wrapper > .contents > .title > div {
+    font-size: 3rem;
+  }
+  .form-dl-wrapper > .contents > .desc {
+    margin-right: 0px;
+  }
+  .teyvat-content > .image-thumbnails {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .another-land > .land {
+    height: 80px;
+  }
+  .another-land > .land > .title {
+    line-height: 80px;
+  }
+  .teyvat-content > .content-wrapper .desc {
+    margin-right: 20px;
+  }
+  .mainpage-wrapper > .title > img {
+    width: 100%;
+    padding: 0px 30px;
+  }
   .download-list .download-item {
     display: none!important;
   }
@@ -122,11 +256,9 @@ body > .swiper > .swiper-scrollbar {
     display: flex;
     flex-direction: column;
   }
-
   .teyvat-content > .content-wrapper {
     width: 100%;
   }
-
   .text-release-official {
     font-size: 20px !important;
   }
