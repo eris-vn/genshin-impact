@@ -1,3 +1,52 @@
-.footer {
+.footer-wrapper {
+    height: 280px !important;
     background-color: rgb(26, 26, 26);
+    padding: 40px 0px;
+}
+
+.footer {
+    color: aliceblue;
+    display: flex;
+    gap: 50px;
+}
+
+.footer>.col {
+    width: 33.3333333%;
+}
+
+.footer>.col>.logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin: -10px 0px;
+
+}
+
+.footer>.col>.logo-wrapper>img {
+    width: 200px;
+    margin: auto 0;
+}
+
+.footer>.col>.title {
+    font-size: 24px;
+    font-family: "Signika", sans-serif;
+    margin-bottom: 20px;
+}
+
+.footer>.col>.desc {
+    font-size: 16px;
+    font-family: "Signika", sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.footer>.col>.list {
+    font-family: "Signika", sans-serif;
+}
+
+.footer>.col>.list>div {
+    margin-top: 5px;
+}
+
+.footer>.col>.list i {
+    margin-right: 10px;
 }

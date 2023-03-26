@@ -40,6 +40,23 @@ var slider2 = new Swiper(".swiper-news", {
     delay: 2500,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    1200: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 var slider3 = new Swiper(".character-mondstadt", {
@@ -80,15 +97,20 @@ var slider5 = new Swiper(".character-liyue", {
   slidesPerView: 5,
   spaceBetween: 15,
   breakpoints: {
-    480: {},
-    768: {
-      slidesPerView: 4,
+    1200: {
+      slidesPerView: 5,
     },
     1024: {
       slidesPerView: 7.5,
     },
-    1200: {
+    768: {
       slidesPerView: 5,
+    },
+    480: {
+      slidesPerView: 5,
+    },
+    0: {
+      slidesPerView: 3,
     },
   },
 });
@@ -98,13 +120,20 @@ var slider6 = new Swiper(".character-inazuma", {
   slidesPerView: 5,
   spaceBetween: 15,
   breakpoints: {
-    768: {},
-    480: {},
+    1200: {
+      slidesPerView: 5,
+    },
     1024: {
       slidesPerView: 7.5,
     },
-    1200: {
+    768: {
       slidesPerView: 5,
+    },
+    480: {
+      slidesPerView: 5,
+    },
+    0: {
+      slidesPerView: 3,
     },
   },
 });
@@ -186,6 +215,10 @@ function playMusic() {
 // chuyển đến slide teyvat
 $(".arrow-down").click(function () {
   swiper.slideTo(1);
+});
+
+$(".paimon-dl").click(function () {
+  swiper.slideTo(4);
 });
 
 // xử lý đổi vùng đất
