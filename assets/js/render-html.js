@@ -23,9 +23,9 @@ characters.forEach((land) => {
         <div class="info">
             <div class="name">
                 <div>${data.name}</div>
-                <img class="vision" src="/assets/img/Vision_${land.land}_${
-      data.vision
-    }.png" alt="vision">
+                <img class="vision" src="/assets/img/Vision_${capitalizeFirstLetter(
+                  land.land
+                )}_${capitalizeFirstLetter(data.vision)}.png" alt="vision">
                 <img class="line" src="/assets/img/line-2.png" alt="line">
             </div>
             <div class="desc">
