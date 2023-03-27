@@ -198,7 +198,7 @@ $(document).ready(function () {
 
 // xử lý nhạc nền
 $(document).ready(function () {
-  // $('#audio')[0].play();
+  $("#audio")[0].play();
 });
 $("#music").click(function () {
   if ($("#music").hasClass("offmusic")) {
