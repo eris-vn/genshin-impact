@@ -180,6 +180,12 @@ swiper.on("slideChange", (slide) => {
       $(this).addClass("active");
     }
   });
+  $(".sb-item").each(function (itemIndex) {
+    if (slide.activeIndex == itemIndex) {
+      $(".sb-item").removeClass("active");
+      $(this).addClass("active");
+    }
+  });
 });
 $(document).ready(function () {
   $(".h-item").click(function () {
@@ -221,6 +227,11 @@ $(".paimon-dl").click(function () {
   swiper.slideTo(4);
 });
 
+// chuyển slide
+function gotoSlide(num) {
+  swiper.slideTo(num);
+}
+
 // xử lý đổi vùng đất
 function change_land(land) {
   $(".teyvat-content").removeClass("active");
@@ -234,3 +245,27 @@ $(".avatar").click(function () {
   $(".info-wrapper").removeClass("active");
   $(`#${$(this).attr("id")}`).addClass("active");
 });
+
+// mở sidebar
+$("#openSideBar").click(() => {
+  $(".sidebar").show();
+  $(".sidebar").removeClass("hide");
+  $(".sidebar").addClass("active");
+});
+
+// đống sidebar
+$("#closeSideBar").click(() => {
+  $(".sidebar").addClass("hide");
+  $(".sidebar").removeClass("active");
+  setTimeout(() => {
+    $(".sidebar").hide();
+  }, 300);
+});
+
+function closeSideBar() {
+  $(".sidebar").addClass("hide");
+  $(".sidebar").removeClass("active");
+  setTimeout(() => {
+    $(".sidebar").hide();
+  }, 300);
+}

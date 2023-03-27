@@ -45,6 +45,7 @@
 
 .footer>.col>.list>div {
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .footer>.col>.list i {

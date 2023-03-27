@@ -1,0 +1,117 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidebar.active {
+    display: block;
+
+}
+
+.sidebar>.sb-background {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.sidebar.active>.sb-background {
+    background-color: #000000bd;
+}
+
+.sidebar>.sb-body {
+    font-family: "Signika", sans-serif;
+    position: absolute;
+    right: 0;
+    background: aliceblue;
+    height: 100%;
+    width: 280px;
+    animation: sidebar-appears 0.4s ease;
+}
+
+@keyframes sidebar-appears {
+    0% {
+        opacity: 0.3;
+        transform: translateX(240px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.sidebar.hide>.sb-body {
+    animation: sidebar-disappears 0.3s ease-out;
+}
+
+@keyframes sidebar-disappears {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(240px);
+    }
+}
+
+.sidebar>.sb-body>.sb-header {
+    width: 100%;
+    background: #242424;
+    color: aliceblue;
+    padding: 15px 20px 20px 20px;
+    border-bottom: 2px solid #61e77e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar>.sb-body>.sb-footer {
+    position: absolute;
+    border-top: 1px solid gray;
+    padding-top: 17px;
+    padding-left: 0px;
+    padding-bottom: 17px;
+    width: 100%;
+    bottom: 0;
+    background: #000000de;
+}
+
+.sidebar>.sb-body>.sb-footer>.h-item-icon-list {
+    justify-content: center;
+}
+
+.sidebar>.sb-body>.sb-list {
+    padding: 20px 25px;
+}
+
+.sidebar>.sb-body>.sb-list>.sb-item {
+    cursor: pointer;
+    transition: color 0.2s;
+    color: gray;
+    padding: 10px 0px;
+
+}
+
+.sidebar>.sb-body>.sb-list>.active {
+    color: black;
+}
+
+.sidebar>.sb-body>.sb-header>.logo {
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+}
+
+.sidebar>.sb-body>.sb-header>.close-btn {
+    cursor: pointer;
+    height: fit-content;
+    font-size: 26px;
+}
